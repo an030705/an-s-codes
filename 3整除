@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+	int a,b,e;
+	int d=0;
+	scanf("%d",&a);
+	do
+	{
+		b=a%10;
+		a=a/10;
+		d=d+b;
+	}while(a>0);
+	e=d%3;
+	if(e!=0)
+	{
+		printf("%d 0",d);
+	}
+	else
+	{
+		printf("%d 1",d);
+	}
+	return 0;
+}

@@ -1,0 +1,31 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <string.h>
+int hundred, fif, twenty, ten, five, one, n, money,p;
+void cq()
+{
+    p += money;
+    hundred += money / 100;
+    money %= 100;
+    fif += money / 50;
+    money %= 50;
+    twenty += money / 20;
+    money %= 20;
+    ten += money / 10;
+    money %= 10;
+    five += money / 5;
+    money %= 5;
+    one += money;
+}
+int main()
+{
+    int val, i;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+    scanf("%d", &val);
+    money = val;
+    cq();
+ }
+    printf("%d\n%d %d %d %d %d %d",p ,hundred, fif, twenty, ten, five, one);
+    return 0;
+}

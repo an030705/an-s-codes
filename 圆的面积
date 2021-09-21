@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+	double PI=3.14;
+	double r,s;
+	scanf("%lf",&r);
+	
+	if (r<0)
+	{
+		printf("error");
+	}
+	else
+	{
+		s=PI*r*r;
+		printf("%.2f",s);
+	}
+	return 0;
+ } 

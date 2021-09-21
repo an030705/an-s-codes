@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+	int a,b,c,hour,minute,second;
+	scanf("%d",&a);
+	if (a>0)
+	{   
+	    b=a%86400;
+    }
+	else
+	{
+		b=(a%86400+86400)%86400;
+	}
+	hour=b/3600;
+	c=b%3600;
+	minute=c/60;
+	second=c%60;
+	printf("%.2d:%.2d:%.2d",hour,minute,second);
+	return 0;
+}
